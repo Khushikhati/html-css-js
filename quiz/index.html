@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Introductory Page -->
+    <div id="intro" class="page active">
+        <h1>Welcome to the Quiz!</h1>
+        <p>Please read the instructions carefully before starting the quiz:</p>
+        <div style="text-align: left;">
+            <ol>
+                <li>There are multiple-choice questions in this quiz.</li>
+                <li>Each question carries one mark.</li>
+                <li>Choose the correct answer for each question.</li>
+                <li>Click the "Submit" button to see your score.</li>
+                <li>You have a limited time to complete the quiz. The timer will start once you click "Start Quiz".</li>
+            </ol>
+        </div>
+        <button id="startQuiz">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="page hidden">
+        <div class="quiz-container">
+            <div id="timer">Time Remaining: <span id="time">60</span> seconds</div> <!-- Timer Display -->
+            <div id="quiz"></div>
+        </div>
+        <button id="submit">Submit Quiz</button>
+    </div>
+
+    <!-- Results Page -->
+    <div id="resultsPage" class="page hidden">
+        <h2>Your Results</h2>
+        <div id="results"></div>
+        <button id="restartQuiz">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
